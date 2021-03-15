@@ -1,4 +1,6 @@
-package com.example.designpatterns.practise;
+package com.example.designpatterns.practise.factories;
+
+import com.example.designpatterns.practise.vehicles.Vehicle;
 
 public abstract class VehicleFactory {
 

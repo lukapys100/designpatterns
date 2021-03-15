@@ -1,4 +1,4 @@
-package com.example.designpatterns.practise;
+package com.example.designpatterns.practise.vehicles;
 
 public class Car implements Vehicle{
     private boolean isOn;

@@ -1,5 +1,10 @@
 package com.example.designpatterns.practise;
 
+import com.example.designpatterns.practise.factories.BikeFactory;
+import com.example.designpatterns.practise.factories.CarFactory;
+import com.example.designpatterns.practise.factories.PlaneFactory;
+import com.example.designpatterns.practise.factories.VehicleFactory;
+
 import java.util.Scanner;
 
 public class Main {
