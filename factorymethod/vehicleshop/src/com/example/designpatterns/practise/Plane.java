@@ -18,6 +18,8 @@ public class Plane implements Vehicle {
             }
             this.isEveryEngineOn = true;
         }
+        move();
+        stop();
     }
 
     @Override

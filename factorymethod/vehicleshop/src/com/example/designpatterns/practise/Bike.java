@@ -4,6 +4,8 @@ public class Bike implements Vehicle {
     @Override
     public void startEngine() {
         System.out.println("You have no engine... Just use your legs muscle :)");
+        move();
+        stop();
     }
 
     @Override

@@ -9,6 +9,8 @@ public class Car implements Vehicle{
             System.out.println("Let's the car starts...");
             this.isOn = true;
         }
+        move();
+        stop();
     }
 
     @Override
