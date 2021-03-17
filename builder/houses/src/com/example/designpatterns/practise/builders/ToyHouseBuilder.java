@@ -1,13 +1,17 @@
-package com.example.designpatterns.practise;
+package com.example.designpatterns.practise.builders;
 
-public class RealHouseBuilder implements Builder {
+import com.example.designpatterns.practise.resultsfeatures.BuildingType;
+import com.example.designpatterns.practise.resultsfeatures.Garden;
+import com.example.designpatterns.practise.resultsfeatures.SwimmingPool;
+import com.example.designpatterns.practise.results.ToyHouse;
+
+public class ToyHouseBuilder implements Builder {
 
     private BuildingType buildingType;
     private int windows;
     private int doors;
     private Garden garden;
     private SwimmingPool swimmingPool;
-
 
     @Override
     public void setBuildingType(BuildingType buildingType) {
@@ -34,7 +38,7 @@ public class RealHouseBuilder implements Builder {
         this.swimmingPool = swimmingPool;
     }
 
-    public RealHouse getResult(){
-        return new RealHouse(buildingType, windows, doors, garden, swimmingPool);
+    public ToyHouse getResult(){
+        return new ToyHouse(buildingType, windows, doors, garden, swimmingPool);
     }
 }

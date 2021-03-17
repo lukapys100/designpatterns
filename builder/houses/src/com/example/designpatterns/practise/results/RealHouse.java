@@ -1,4 +1,8 @@
-package com.example.designpatterns.practise;
+package com.example.designpatterns.practise.results;
+
+import com.example.designpatterns.practise.resultsfeatures.BuildingType;
+import com.example.designpatterns.practise.resultsfeatures.Garden;
+import com.example.designpatterns.practise.resultsfeatures.SwimmingPool;
 
 public class RealHouse {
     private BuildingType buildingType;

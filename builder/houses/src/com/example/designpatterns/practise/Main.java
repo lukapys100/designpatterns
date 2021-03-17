@@ -1,5 +1,11 @@
 package com.example.designpatterns.practise;
 
+import com.example.designpatterns.practise.builders.RealHouseBuilder;
+import com.example.designpatterns.practise.builders.ToyHouseBuilder;
+import com.example.designpatterns.practise.directors.Director;
+import com.example.designpatterns.practise.results.RealHouse;
+import com.example.designpatterns.practise.results.ToyHouse;
+
 public class Main {
 
     public static void main(String[] args) {

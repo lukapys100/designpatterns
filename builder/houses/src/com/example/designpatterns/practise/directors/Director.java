@@ -1,4 +1,9 @@
-package com.example.designpatterns.practise;
+package com.example.designpatterns.practise.directors;
+
+import com.example.designpatterns.practise.builders.Builder;
+import com.example.designpatterns.practise.resultsfeatures.BuildingType;
+import com.example.designpatterns.practise.resultsfeatures.Garden;
+import com.example.designpatterns.practise.resultsfeatures.SwimmingPool;
 
 public class Director {
 
