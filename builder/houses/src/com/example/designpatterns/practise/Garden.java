@@ -17,4 +17,12 @@ public class Garden {
     public int getLength() {
         return length;
     }
+
+    @Override
+    public String toString() {
+        return "Garden{" +
+                "width=" + width +
+                ", length=" + length +
+                '}';
+    }
 }

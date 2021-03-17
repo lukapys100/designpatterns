@@ -16,12 +16,16 @@ public class ToyHouse {
         this.swimmingPool = swimmingPool;
     }
 
-    public void printInformation(){
+    public String printInformation(){
         String info = "Building type: " + buildingType + "\n";
         info+="Number of windows: " + windows + "\n";
         info+="Number of doors: " + doors + "\n";
-        info+="Garden info: " + garden + "\n";
-        info+="Swimming pool info: " + swimmingPool + "\n";
-        System.out.println(info);
+        if(garden != null){
+            info+="Garden info: " + garden.toString() + "\n";
+        }
+        if(swimmingPool != null){
+            info+="Swimming pool info: " + swimmingPool.toString() + "\n";
+        }
+        return info;
     }
 }

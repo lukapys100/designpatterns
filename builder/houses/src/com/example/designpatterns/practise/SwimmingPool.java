@@ -23,4 +23,13 @@ public class SwimmingPool {
     public int getDepth() {
         return depth;
     }
+
+    @Override
+    public String toString() {
+        return "SwimmingPool{" +
+                "length=" + length +
+                ", width=" + width +
+                ", depth=" + depth +
+                '}';
+    }
 }
