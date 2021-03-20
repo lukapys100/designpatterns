@@ -11,9 +11,9 @@ public class Code {
         return code;
     }
 
-    public boolean getAccess(DigitalCode digitalCode){
+    public boolean getAccess(long digitalCode){
         boolean isAccepted;
-        isAccepted = (this.code == digitalCode.getCode());
+        isAccepted = (this.code == digitalCode);
         return isAccepted;
     }
 }

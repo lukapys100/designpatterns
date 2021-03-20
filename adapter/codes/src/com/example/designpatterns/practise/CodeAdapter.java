@@ -6,7 +6,6 @@ public class CodeAdapter extends DigitalCode {
 
     private CharacterCode characterCode;
     private final int ASCII_DIGIT_0 = 48;
-    private final int ASCII_DIGIT_9 = 57;
     private final int ASCII_SMALL_A = 97;
     private final int ASCII_SMALL_J = 106;
     private final int ASCII_DISTANCE_SMALL_A_DIGIT_0 = ASCII_SMALL_A - ASCII_DIGIT_0;

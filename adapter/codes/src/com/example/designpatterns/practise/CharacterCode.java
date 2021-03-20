@@ -1,6 +1,7 @@
 package com.example.designpatterns.practise;
 
 //Class not compatible with Code class
+//Such code is built from a-j characters (10 characters that correspond 0-9 digits)
 public class CharacterCode {
 
     private String code;
