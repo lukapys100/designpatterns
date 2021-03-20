@@ -20,7 +20,8 @@ public class CodeAdapter extends DigitalCode {
         StringBuilder result = new StringBuilder();
         for(int i=0; i<codeToConvert.length(); i++){
             if(codeToConvert.charAt(i) >= ASCII_SMALL_A && codeToConvert.charAt(i) <= ASCII_SMALL_J){
-                result.append(codeToConvert.charAt(i) - ASCII_DISTANCE_SMALL_A_DIGIT_0);
+                char ch = (char) (codeToConvert.charAt(i) - ASCII_DISTANCE_SMALL_A_DIGIT_0);
+                result.append(ch);
             }else{
                 throw new IllegalArgumentException("Illegal character in code. Is: " + codeToConvert.charAt(i)
                                                     + ", should be: a-j character.");
