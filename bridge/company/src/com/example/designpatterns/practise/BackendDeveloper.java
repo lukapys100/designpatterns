@@ -28,6 +28,7 @@ public class BackendDeveloper implements Worker {
     public void takeBreak() {
         if(isBreakAvailable){
             System.out.println("Time for a break!");
+            this.isBreakAvailable = false;
         }else{
             System.out.println("I have no break :(");
         }
