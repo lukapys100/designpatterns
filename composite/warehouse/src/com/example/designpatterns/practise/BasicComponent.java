@@ -6,8 +6,16 @@ abstract class BasicComponent implements Component{
     protected boolean isHeld;
 
     public BasicComponent(int weight, int cost) {
-        this.weight = weight;
-        this.cost = cost;
+        if(weight > 0){
+            this.weight = weight;
+        }else{
+            this.weight = 1;
+        }
+        if(cost > 0){
+            this.cost = cost;
+        }else{
+            this.cost = 1;
+        }
     }
 
     @Override
