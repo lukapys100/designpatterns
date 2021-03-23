@@ -4,9 +4,8 @@ public class Drill extends BasicComponent implements Tool {
 
     private boolean isOn = false;
 
-    public Drill(int weight, int cost, boolean isOn) {
+    public Drill(int weight, int cost) {
         super(weight, cost);
-        this.isOn = isOn;
     }
 
     @Override
