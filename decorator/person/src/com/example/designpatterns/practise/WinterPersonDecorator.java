@@ -15,7 +15,7 @@ public class WinterPersonDecorator extends BaseDecorator {
     public Clothes takeOf() {
         return super.takeOf();
     }
-    
+
     public Clothes addWinterSet(Clothes clothes){
         clothes.add("Hat");
         clothes.add("Scarf");

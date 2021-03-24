@@ -33,6 +33,12 @@ public class Clothes {
         return "Name: " + name + " does not exist.";
     }
 
+    public void printAll(){
+        for(String n : wearingClothes){
+            System.out.println(n);
+        }
+    }
+
     public int getCost() {
         return cost;
     }

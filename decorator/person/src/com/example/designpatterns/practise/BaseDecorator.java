@@ -2,7 +2,7 @@ package com.example.designpatterns.practise;
 
 
 //Base decorator for wrapping Person objects
-abstract class BaseDecorator implements Human{
+public class BaseDecorator implements Human{
     private Human human;
 
     public BaseDecorator(Human human) {
