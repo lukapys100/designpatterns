@@ -19,14 +19,17 @@ public class Tank implements WarMachine{
 
     @Override
     public void aim(int x, int y) {
-        if(x>=0 && y>=0){
-            currentCrosshairPositionX = x+100;
-            currentCrosshairPositionY = y+100;
-            while(currentCrosshairPositionX >= x+TANK_ACCURACY_OVERSHOOT
-                    && currentCrosshairPositionY >= y+TANK_ACCURACY_OVERSHOOT){
-                currentCrosshairPositionX -= 1;
-                currentCrosshairPositionY -= 1;
-            }
+        currentCrosshairPositionX = x + 100;
+        currentCrosshairPositionY = y + 100;
+        System.out.println("Target on position: ");
+        System.out.println("x: " + x);
+        System.out.println("y: " + y);
+        System.out.println("Current crosshair position - x: " + currentCrosshairPositionX + ", y: " + currentCrosshairPositionY);
+        while (currentCrosshairPositionX >= x + TANK_ACCURACY_OVERSHOOT
+                && currentCrosshairPositionY >= y + TANK_ACCURACY_OVERSHOOT) {
+            currentCrosshairPositionX -= 1;
+            currentCrosshairPositionY -= 1;
+            System.out.println("Current crosshair position - x: " + currentCrosshairPositionX + ", y: " + currentCrosshairPositionY);
         }
     }
 
